@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="assets/icone.png">
+    <title>Zero ao Investidor</title>
+<style>
+    body {
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      background-image: url("assets/foto1.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      overflow-x: hidden;
+      box-sizing: border-box;
+      background-color: #262d3a;
+      overflow-x: hidden;
+      box-sizing: border-box;
+    }
+
+    .banner {
+      height: 100px;
+      margin: 0 auto;
+      top: 0;
+      position: fixed;
+      text-align: center;
+      margin-right: 0px;
+      margin-left: 0px;
+      z-index: 10;
+      background-image: linear-gradient(to right, #045de1, #05206a, #264489);
+      justify-content: center;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0px; 
+      animation: appear 1.3s ease;
+    }
+
+    .card {
+      height: 100px;
+      width: 300px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      animation: fadein 1s ease-in-out;
+      padding: 20px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      margin: 0 auto;
+      background-image: linear-gradient(to right, #1979b9, #1505be, #ebebfe);
+      align-items: center;
+      border-radius: 20px;
+    }
+
+    .card:hover {
+      scale: 1.02;
+    }
+
+    .button{ 
+      background-color: #a3d3ff;
+      border-radius: 10px;
+      width: 70px;
+      display: flex;
+      height: 70px;
+      box-shadow: 0px 4px 10px #0000;
+      border: none;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+      align-items: center;
+    }
+
+    .button:hover{
+      background-color: #0750af;
+      transform: scale(1.05);
+    }
+
+    .button:active{
+      transform: scale(1.10);
+    }
+
+    .bar:hover {
+      font-size:  105%;
+    }
+
+    .bar:active {
+      font-size: 110%;
+    }
+
+   @keyframes fadein {
+    from {opacity: 0; transform: translateY(20px); }
+    to {opacity: 1; transform: translateY(0px); }
+   }
+
+   @keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+   }
+
+</style>
+  </head>
+  <body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+
+    <div class="banner">
+    <a href="#inicio" class="bar" style="text-decoration: none;"><h1 style="font:sans-serif; color: black;">ZERO AO INVESTIDOR</h1></a>
+    <a href="#sobre" class="bar" style="color: black; text-decoration: none; margin-left: 40px;"><h3>SOBRE</h3></a>
+    <a href="#cursos" class="bar" style="color: black; text-decoration: none; margin-left: 40px;"><h3>CURSOS</h3></a>
+    <a href="#feedback" class="bar" style="color: black; text-decoration: none; margin-left: 40px;"><h3>FEEDBACK</h3></a>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-top: 0px;">
+      <h1 style="position: absolute; margin-top: 25%; margin-right: 50%; text-align: center; font-size: 60px; color: rgb(0, 0, 0); animation: fadein 2s ease-in-out;">Garanta seu <strong>curso</strong> com 20% OFF!</h1>
+      <img id="inicio" src="assets/tungtung.png" style="width: 100%;">
+    </div>
+
+    <div id="sobre" class="card" style="margin-top: 100px; height: 210px; width: 500px;">
+      <h1>SOBRE NÓS</h1>
+      <p>A <strong>Zero ao Investidor</strong> é uma empresa de educação financeira que tem como objetivo ajudar as pessoas a desenvolverem uma relação mais saudável e consciente com o dinheiro.</p>
+      <a href="sobre.html" class="button" style="text-decoration: none; color: black;">Ver detalhes</a>
+    </div>
+
+    <div id="cursos" class="card" style="margin-top: 100px; height: 200px; width: 380px; padding: 20px;">
+      <h1>CURSOS</h1>
+      <p>Assine seu curso da <strong>Zero ao Investidor </strong> aqui!</p>
+      <a href="cursos.html" class="button" style="color: black; text-decoration: none; width: 90px; height: 30px; margin-top: 10px;">Ver Cursos</a>
+    </div>
+  
+    <div id="feedback" class="card" style="margin-top: 100px; height: 200px; width: 380px; padding: 20px;">
+      <h1>FEEDBACK</h1>
+      <p>Nos diga o que podemos melhorar aqui na <strong>Zero ao Investidor</strong>! Agradecemos todo o feedback!</p>
+      <a href="feedback1.html" class="button" style="color: black; text-decoration: none; width: 90px; height: 30px; margin-top: 10px;">Enviar feedback</a>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>Zero ao Investidor-Cursos</title>
+    <link rel="icon" href="assets/icone.png">
+<style>
+    body {
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      background-image: url("assets/foto1.png");
+      overflow-x: hidden;
+      box-sizing: border-box;
+    }
+
+    .banner {
+      height: 100px;
+      margin: 0 auto;
+      top: 0;
+      position: fixed;
+      text-align: center;
+      margin-right: 0px;
+      margin-left: 0px;
+      z-index: 10;
+      background-image: linear-gradient(to right, #045de1, #05206a, #264489);
+      justify-content: center;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0px; 
+    }
+
+    .card {
+      height: 100px;
+      width: 300px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 15px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      margin: 0 auto;
+      background-image: linear-gradient(to right, #1979b9, #1505be, #ebebfe);
+      align-items: center;
+      border-radius: 20px;
+      animation: fadein 1s ease-in-out;
+    }
+
+   .button { 
+      background-color: #a3d3ff;
+      border-radius: 10px;
+      width: 70px;
+      margin: 0 auto;
+      display: flex;
+      height: 70px;
+      border: none;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+      align-items: center;
+    }
+
+    .button:hover{
+      background-color: #0750af;
+      transform: scale(1.05);
+    }
+
+    .button:active{
+      transform: scale(1.10);
+    }
+
+    @keyframes fadein {
+      from {opacity: 0; transform: translateY(20px); }
+      to {opacity: 1; transform: translateY(0px); }
+    }
+
+</style>
+  </head>
+  <body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+
+    <div class="banner">
+      <h1 style="font:sans-serif;">ZERO AO INVESTIDOR</h1>
+    </div>
+
+    <div>
+      <a href="index.html" class="button" style="color: black; text-decoration: none; width: 90px; height: 30px; margin-top: 150px;"><-- Voltar</a>
+    </div>
+
+    <div class="card" style="margin-top: 100px; height: 10%; width: 40%;">
+      <img src="assets/copo2.jpg" id="produto" style="width: 100%; border-radius: 30px;">
+      <h1>Cursos da Zero ao Investidor</h1>
+      <p id="texto"><strong>A Zero ao Investidor</strong> tem diversos cursos para escolher.</p>
+      <p>Dê uma olhada neles!</p>
+      <ul style="text-align: center; margin-right: 25px;">
+    <li style="cursor: pointer;" onclick="mudarProduto('O Investindo do Zero, da Zero ao Investidor, é o curso ideal para quem quer aprender a cuidar melhor do dinheiro e dar os primeiros passos no mundo dos investimentos de forma simples, prática e acessível. Com uma abordagem direta, você vai aprender o básico da organização financeira através da regra 50/30/20, entendendo como dividir sua renda entre necessidades, desejos e investimentos. Sem complicação e sem precisar ter conhecimento prévio, você aprende o essencial para começar a organizar sua vida financeira e construir um futuro melhor.','De R$59,99 por R$49,99! (Curso inteiro)')"><u>Curso Investindo do Zero</u></li>
+    <li style="cursor: pointer;" onclick="mudarProduto('O Desbloqueie Seus Investimentos, da Zero ao Investidor, é o curso ideal para quem já conhece o básico sobre finanças e quer dar o próximo passo para investir com mais confiança e estratégia. Com conteúdo mais aprofundado e prático, você vai aprender a conhecer diferentes tipos de investimentos, entender como eles funcionam e descobrir como escolher opções alinhadas aos seus objetivos financeiros e ao seu perfil de investidor. É o equilíbrio perfeito entre conhecimento e prática para você sair do básico, tomar decisões mais conscientes e evoluir na sua jornada como investidor.','De R$79,99 por R$69,99! (Curso inteiro)')"><u>Curso Desbloqueie seus Investimentos</u></li>
+    <li style="cursor: pointer;" onclick="mudarProduto('O Jornada do Investidor, da Zero ao Investidor, é o curso mais completo para quem deseja dominar suas finanças e evoluir do básico ao avançado no mundo dos investimentos. Com uma abordagem abrangente e prática, você vai aprender desde a organização financeira e a construção de uma reserva de emergência até o funcionamento dos principais tipos de investimentos, estratégias para montar uma carteira diversificada, gestão de riscos e planejamento financeiro de longo prazo. Ideal para quem busca conhecimento aprofundado e quer tomar decisões mais conscientes.','De R$109,99 por R$89,99! (Curso inteiro)')"><u>Curso Jornada do Investidor</u></li>
+      </ul>
+      <p id="price"></p>
+      <a onclick="Swal.fire({  title: 'Erro!', text: 'Atualmente não estamos abertos para vagas.' ,showConfirmButton: true, color: '#000000', background: '#1979b9', confirmButtonColor: '#000000' ,icon: 'error', confirmButtonText: 'OK' })"
+      id="botao" class="button" style="color: black; text-decoration: none; width: 90px; height: 30px; margin-top: 15px; cursor: pointer;">Comprar</a>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script>
+        
+       
+        function mudarProduto(texto, preco) {
+      document.getElementById('texto').innerText = texto;
+      document.getElementById('price').innerText = preco;
+      }
+
+       
+       </script> 
+
+  </body>
+</html>
